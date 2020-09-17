@@ -1,0 +1,12 @@
+{% extends 'auth_layout.html' %}
+{% load crispy_forms_tags %}
+
+{% block auth %}
+    <h1>Create Your ViBeDo Account</h1>
+    <form method="post">
+	{% csrf_token %}
+	{{ form|crispy }}
+	<button type="submit" class="btn btn-sm btn-outline-info">Create</button>
+    </form>
+    <p class="auth-redirect">Or <a href="{% url 'login' %}">Login</a></p>
+{% endblock %}

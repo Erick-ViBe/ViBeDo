@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'gs%!s0j0=fle(yh4$b+^lg@5)5d1@98hp4r#9()n8&_c6o*h=m'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['vibedo.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
